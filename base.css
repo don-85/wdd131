@@ -96,27 +96,27 @@ main {
  p{
     text-align: cover;
  }
-  /* Float the first image to the right of the first paragraph */
+  
 section.card p:first-of-type img {
     float: right;
-    margin-left: 100px; /* Adds space between the image and the text */
-    margin-bottom: 50px; /* Adds space below the image */
+    margin-left: 100px; 
+    margin-bottom: 50px; 
     max-width: 150px;
     height: auto;
   }
   
-  /* Float the second image to the left of the second paragraph */
+  
   section.card p:last-of-type img {
     float: left;
-    margin-right: 10px; /* Adds space between the image and the text */
-    margin-bottom: 10px; /* Adds space below the image */
+    margin-right: 10px; 
+    margin-bottom: 10px; 
     max-width: 150px;
     height: auto;
   }
   
-  /* Ensure text wraps properly around floated images */
+  
   section.card p {
-    overflow: hidden; /* Ensures text wraps around floated images */
+    overflow: hidden; 
   }
   footer{
     text-align: center;
@@ -127,10 +127,10 @@ section.card p:first-of-type img {
   }
   
   .footer-flowers {
-    width: 20px; /* Adjust size as needed */
+    width: 20px; 
     height: auto;
    
-    margin: 10px auto; /* Center the image */
+    margin: 10px auto; 
   }
   
   
