@@ -49,7 +49,12 @@
         <p>
             &copy;2024 🌸 Muntu Titus &nbsp; Kampala, Uganda &nbsp; 🌸
         </p>
-        <p>Last Modification: 01/19/2024 18:27:41</p>
+        <span id="currentyear"> </span>
     </footer>
+    <script>
+        
+        let currentDate = new Date().toLocaleString();
+        document.getElementById("currentyear").textContent = currentDate;
+    </script>
 </body>
 </html>
