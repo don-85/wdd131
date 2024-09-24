@@ -132,5 +132,20 @@ section.card p:first-of-type img {
    
     margin: 10px auto; 
   }
+  span{
+    color: darkorange;
+  }
   
+  .me p{
+   float: left;
+    
+  }
+  .me img{
+   
+  }
+.me p img{
+  float: right;
   
+  width: 100px;
+  max-height: 100px;
+}
