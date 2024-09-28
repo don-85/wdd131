@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="temples.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Temple Album</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Home</h2>
+        <div class="gallery">
+            <div class="photo-item">
+                <img src="temple1.jpg" alt="San Diego California">
+                <p>Temple one</p>
+            </div>
+            <div class="photo-item">
+                <img src="temple2.jpg" alt="San Diego California">
+                <p>Temple two</p>            </div>
+            <div class="photo-item">
+                <img src="temple3.jpg" alt="San Diego California">
+                <p>Temple three</p>
+            </div>
+            <!-- Add more photo items as needed -->
+        </div>
+        <div class="gallery">
+            <div class="photo-item">
+                <img src="temple4.jpg" alt="San Diego California">
+                <p>Temple four</p>
+            </div>
+            <div class="photo-item">
+                <img src="temple5.jpg" alt="San Diego California">
+                <p>Temple five</p>
+            </div>
+            <div class="photo-item">
+                <img src="temple6.jpg" alt="San Diego California">
+                <p>Temple six</p>
+            </div>
+            <!-- Add more photo items as needed -->
+        </div>
+        <div class="gallery">
+            <div class="photo-item">
+                <img src="temple7.jpg" alt="San Diego California">
+                <p>Temple seven</p>
+            </div>
+            <div class="photo-item">
+                <img src="temple8.jpg" alt="San Diego California">
+                <p>Temple eight</p>
+            </div>
+            <div class="photo-item">
+                <img src="temple3.jpg" alt="San Diego California">
+                <p>Temple nine</p>
+            </div>
+            <!-- Add more photo items as needed -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy;2024 🌸 Muntu Titus &nbsp; Kampala, Uganda &nbsp; 🌸
+        </p>
+        <span id="currentyear"> </span>
+    </footer>
+    <script>
+        
+        let currentDate = new Date().toLocaleString();
+        document.getElementById("currentyear").textContent = currentDate;
+    </script>
+    <script>temples.js</script>
+</body>
+</html>
