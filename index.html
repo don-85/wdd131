@@ -4,79 +4,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 - Dynamic Web Fundamentals-Muntu Titus </title>
+  <title>WDD 131 - Dynamic Web Fundamentals-Muntu Titus</title>
   <link rel="stylesheet" type="text/css" href="base.css">
   <meta name="description" content="A software developer based in Kampala, Uganda, specializes in efficient software solutions and collaborative projects. Explore web development resources and insights into Uganda's culture." />
 
   <meta name="author" content="Muntu Titus">
   <script src="getdates.js"></script>
-
-
 </head>
 
 <body>
   <header>
-    <h1>WDD 131 - Dynamic Web Fundamentals-<span>Muntu Titus </span></h1>
+    <h1>WDD 131 - Dynamic Web Fundamentals-<span>Muntu Titus</span></h1>
     <nav>
-      
       <a href="https://www.linkedin.com/in/muntu-titus-a85527283/" target="_blank">linkedin</a>
-      <a href=" https://byui.instructure.com/">I-learn</a>
+      <a href="https://byui.instructure.com/">I-learn</a>
       <a href="temples.html" target="_blank">Temple</a>
-      <a href=" https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
       <a href="#">Finalproject</a>
-
     </nav>
   </header>
- 
-    <main>
-   <section class="card">
-    <nav>
-      About
-    </nav>
-    <section class="me">
-    <p style="float: right;"> My name is Muntu Titus and I am a software developer. I specialize in developing robust and efficient software solutions. My passion for coding and technology drives me to continuously learn and apply the latest programming techniques and frameworks. I enjoy working on collaborative projects and am always eager to take on new challenges that push the boundaries of what software can achieve.
-      <img src="profile.jpg" alt="Uganda" style="float: left;" >
-    </p>
-   
-  </section>
-    <h2>Kampala, Uganda</h2>
-    <hr>
-    <section class="My">
-    <p><img src="ug.jpg" alt="Uganda">
-      Uganda is a landlocked country in East Africa, bordered by Kenya, South Sudan, DR Congo, Rwanda, and Tanzania. Its diverse landscapes include the Rwenzori Mountains and Lake Victoria. The capital is Kampala, and its population is about 47 million (2023). English and Swahili are official languages, and the currency is the Ugandan Shilling (UGX).
-      
-    </p>
-    <h2></h2>
-  </section>
-   </section>
-   <section class="card">
-    <nav>
-      Web Dev Resources
-    </nav>
-<ul>
-    <li><a href="" active>Dav.to community</a></li>
-        <li> <a href="">Sashing magazine</a></li>
-            <li><a href="" active>CSS Tricks</a></li>
-                <li><a href="">W3 Schools</a></li>
-                        <li> <a href="">Udemy</a></li>
-                            <li> <a href="" active>Louren Picsum Image Placeholder</a></li>
-</ul>
-   </section>
-    </main>
-    
-  <footer>
-    
-    <p>
-      &copy;2024 🌸 Muntu Titus &nbsp; Kampala, Uganda &nbsp; 🌸
-  </p>
-  <span id="currentyear"> </span>
-  </footer>
-  <script>
-  let currentDate = new Date().toLocaleString();
-  document.getElementById("currentyear").textContent = currentDate;
-</script>
-<script src="getdates.js"></script>
-</body>
 
+  <main>
+    <section class="card">
+      <h2>About</h2>
+      <section class="me">
+        <p style="float: right;">
+          My name is Muntu Titus and I am a software developer. I specialize in developing robust and efficient software solutions...
+          <img src="profile.jpg" alt="Uganda" style="float: left;">
+        </p>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>Kampala, Uganda</h2>
+      <hr>
+      <section class="My">
+        <p>
+          <img src="ug.jpg" alt="Uganda">
+          Uganda is a landlocked country in East Africa, bordered by Kenya, South Sudan, DR Congo, Rwanda, and Tanzania...
+        </p>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="">Dav.to community</a></li>
+        <li><a href="">Sashing magazine</a></li>
+        <li><a href="">CSS Tricks</a></li>
+        <li><a href="">W3 Schools</a></li>
+        <li><a href="">Udemy</a></li>
+        <li><a href="">Louren Picsum Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2024 🌸 Muntu Titus &nbsp; Kampala, Uganda &nbsp; 🌸</p>
+    <span id="currentyear"></span>
+  </footer>
+
+  <script>
+    let currentDate = new Date().toLocaleString();
+    document.getElementById("currentyear").textContent = currentDate;
+  </script>
+  <script src="getdates.js"></script>
+</body>
 
 </html>
