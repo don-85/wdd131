@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Titus Muntu">
+    <meta name="description" content="Information about Uganda">
+    <title>Uganda Information</title>
+    <link rel="stylesheet" href="style/place.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Uganda</h1>
+    </div>
+    <div class="box">
+
+    </div>
+
+    <div class="content">
+        <img src="cob.webp" alt="Lemurs in Uganda">
+        <div class="info-box data-box">
+            <div class="head">
+            <h2>Data</h2>
+        </div>
+            <p><strong>Area:</strong> 241,550 km²</p>
+            <p><strong>Population:</strong> 47,250,000</p>
+            <p><strong>Capital:</strong> Kampala</p>
+            <p><strong>Languages:</strong> English, Luganda, Runyankole</p>
+            <p><strong>Currency:</strong> UGX</p>
+            <p><strong>Time Zone:</strong> UTC+3</p>
+            <p><strong>Calling Code:</strong> +256</p>
+            <p><strong>Internet TLD:</strong> .ug</p>
+        </div>
+        <div class="info-box weather-box">
+            <div class="head">
+            <h2>Weather  <img src="weather.svg" alt="weather in Uganda"></h2>
+        </div>
+        <form id="windchillForm">
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" id="temperature" name="temperature" required><br><br>
+
+            <label for="windSpeed">Wind Speed (km/h):</label>
+            <input type="number" id="windSpeed" name="windSpeed" required><br><br>
+
+            <button type="button" onclick="calculateAndDisplayWindChill()">Calculate Wind Chill</button>
+        </form>
+        <p><strong>Calculated Wind Chill:</strong> <span id="calculatedWindChill">N/A</span></p>
+    </div>
+
+    <div class="footer">
+        <p>©2024 🌸 Titus Muntu 🌸 Uganda</p>
+        <p class="date-time">Last Modification: <span id="lastModified"></span></p>
+    </div>
+    <script>
+       
+        document.getElementById('lastModified').textContent = document.lastModified;
+
+       
+        function calculateWindChill(temperature, windSpeed, isCelsius = true) {
+            return isCelsius 
+                ? (13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16))
+                : (35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16));
+        }
+
+       
+        function calculateAndDisplayWindChill() {
+            const temperature = parseFloat(document.getElementById('temperature').value);
+            const windSpeed = parseFloat(document.getElementById('windSpeed').value);
+            
+            if (isNaN(temperature) || isNaN(windSpeed)) {
+                alert("Please enter valid numbers for both temperature and wind speed.");
+                return;
+            }
+
+            const windChill = calculateWindChill(temperature, windSpeed);
+            document.getElementById('calculatedWindChill').textContent = windChill.toFixed(2) + "°C";
+        }
+    </script>
+    <script>
+       
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+
+</body>
+</html>
