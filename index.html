@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 131 - Dynamic Web Fundamentals-Muntu Titus</title>
-  <link rel="stylesheet" type="text/css" href="base.css">
-  <meta name="description" content="A software developer based in Kampala, Uganda, specializes in efficient software solutions and collaborative projects. Explore web development resources and insights into Uganda's culture." />
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval'">
+
+  <meta name="description" content="A software student based in Kampala, Uganda, aiming at specializing in the efficiency of software solutions and collaborative projects. To Explore web development resources and insights into Uganda's culture." />
 
   <meta name="author" content="Muntu Titus">
-  <script src="getdates.js"></script>
+  <script src="script/getdates.js"></script>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
     <section class="card">
       <h2>About</h2>
       <section class="me">
-        <p style="float: right;">
+        <p>
           My name is Muntu Titus and I am a software developer. I specialize in developing robust and efficient software solutions...
           <img src="profile.jpg" alt="Uganda">
         </p>
@@ -69,7 +71,7 @@
     let currentDate = new Date().toLocaleString();
     document.getElementById("currentyear").textContent = currentDate;
   </script>
-  <script src="getdates.js"></script>
+  <script src="script/getdates.js" defer></script>
 </body>
 
 </html>
