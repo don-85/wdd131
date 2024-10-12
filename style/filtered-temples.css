@@ -120,5 +120,33 @@ footer p {
         width: 30%;
     }
 }
+body{
+font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+  }
+  #temple-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  .temple-card {
+    border: 1px solid #ddd; 
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transition: transform 0.2s; 
+  }
+  .temple-card:hover {
+    transform: scale(1.05); 
+  }
+  .temple-image {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15); 
+    border-radius: 4px; 
+  }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
