@@ -54,15 +54,54 @@ textarea {
   border-radius: 4px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  margin-right: 10px;
+input[type="radio"] {
+  margin-right: 5px;
 }
 
-div {
-  display: flex;       
-  align-items: center; 
-  justify-content: space-around; 
+input[type="checkbox"] {
+  margin-right: 10px;
+  vertical-align: middle;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+label {
+  display:inline-block;
+  margin-right: 2px;
+}
+label a{
+  color: #6200ea;
+}
+div.rating {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.rating label {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.rating input[type="radio"] {
+  display: inline-block;
+  margin-top: 5px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+div.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.checkbox-group label {
+  margin-left: 5px;
 }
 
 button {
