@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals-Muntu Titus</title>
+  <link rel="stylesheet" type="text/css" href="styles/form.css">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval'">
+
+  <meta name="description" content="Post and rate product reviews with a dynamic web form designed for WDD 131 - Dynamic Web Fundamentals by Muntu Titus. Features include product selection, ratings, review submission, and user feedback, with resources from Kampala, Uganda.">
+
+
+  <meta name="author" content="Muntu Titus">
+  <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+  <header>
+   
+    <nav>
+        <h1>Product Review</h1>
+    </nav>
+  </header>
+
+  <main>
+    <script>
+   
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadFormData(); 
+    
+      const form = document.querySelector('form');
+      form.addEventListener('submit', saveFormData); 
+    });
+    
+    function saveFormData(event) {
+      event.preventDefault(); 
+    
+      const formData = {
+        productName: document.getElementById('product-name').value,
+        rating: document.querySelector('input[name="rating"]:checked')?.value || "",
+        dateInstalled: document.getElementById('date-installed').value,
+        features: Array.from(document.querySelectorAll('input[name="feature"]:checked')).map(feature => feature.value),
+        review: document.getElementById('review').value,
+        reviewerName: document.getElementById('reviewer-name').value,
+      };
+    
+      localStorage.setItem('formData', JSON.stringify(formData)); 
+      alert('Your review has been saved locally!');
+      form.reset(); 
+    }
+    
+    function loadFormData() {
+      const savedData = JSON.parse(localStorage.getItem('formData'));
+    
+      if (savedData) {
+        document.getElementById('product-name').value = savedData.productName;
+        if (savedData.rating) {
+          document.getElementById(`rating-${savedData.rating}`).checked = true;
+        }
+        document.getElementById('date-installed').value = savedData.dateInstalled;
+    
+        savedData.features.forEach(feature => {
+          const checkbox = document.querySelector(`input[name="feature"][value="${feature}"]`);
+          if (checkbox) checkbox.checked = true;
+        });
+    
+        document.getElementById('review').value = savedData.review;
+        document.getElementById('reviewer-name').value = savedData.reviewerName;
+      }
+    }
+</script>
+  </main>
+
+  <footer>
+    <p>&copy;2024 🌸 Muntu Titus &nbsp; Kampala, Uganda &nbsp; 🌸</p>
+    <span id="currentyear"></span>
+  </footer>
+  <script>
+    let currentDate = new Date().toLocaleString();
+    document.getElementById("currentyear").textContent = currentDate;
+</script>
+  <script src="scripts/form.js" defer></script>
+</body>
+
+</html>

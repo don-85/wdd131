@@ -61,3 +61,48 @@ function populateProductDropdown() {
 
 
 window.onload = populateProductDropdown;
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadFormData(); 
+
+  const form = document.querySelector('form');
+  form.addEventListener('submit', saveFormData); 
+});
+
+function saveFormData(event) {
+  event.preventDefault(); 
+
+  const formData = {
+    productName: document.getElementById('product-name').value,
+    rating: document.querySelector('input[name="rating"]:checked')?.value || "",
+    dateInstalled: document.getElementById('date-installed').value,
+    features: Array.from(document.querySelectorAll('input[name="feature"]:checked')).map(feature => feature.value),
+    review: document.getElementById('review').value,
+    reviewerName: document.getElementById('reviewer-name').value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(formData)); 
+  alert('Your review has been saved locally!');
+  form.reset(); 
+}
+
+function loadFormData() {
+  const savedData = JSON.parse(localStorage.getItem('formData'));
+
+  if (savedData) {
+    document.getElementById('product-name').value = savedData.productName;
+    if (savedData.rating) {
+      document.getElementById(`rating-${savedData.rating}`).checked = true;
+    }
+    document.getElementById('date-installed').value = savedData.dateInstalled;
+
+    savedData.features.forEach(feature => {
+      const checkbox = document.querySelector(`input[name="feature"][value="${feature}"]`);
+      if (checkbox) checkbox.checked = true;
+    });
+
+    document.getElementById('review').value = savedData.review;
+    document.getElementById('reviewer-name').value = savedData.reviewerName;
+  }
+}

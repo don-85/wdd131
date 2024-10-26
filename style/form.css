@@ -25,6 +25,7 @@ main {
   padding: 20px;
   display: flex;
   justify-content: center;
+  margin-left: 400px;
 }
 
 form {
@@ -33,6 +34,7 @@ form {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 300px;
+ 
 }
 
 label {
@@ -86,7 +88,6 @@ button:hover {
   background-color: #7b1fa2;
 }
 
-/* Footer styles */
 footer {
   text-align: center;
   background-color: purple;
