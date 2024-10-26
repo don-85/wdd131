@@ -22,25 +22,45 @@
   </header>
 
 <main>
-  <section class="contact-form">
-    <h1>Contact Us</h1>
-    <form id="contactForm">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+  <div class="container">
+    <section class="section-title">
+        <h2>Contact Us</h2>
+    </section>
 
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required>
+    <section class="contact-info">
+        <h3>Get in Touch with RapidStream Adventures</h3>
+        <p>If you have any questions, want to learn more about our rafting packages, or need help planning your adventure, feel free to reach out. Our team is here to assist you</p>
+        <p><strong>Phone:</strong> +256773223289</p>
+        <p><strong>Email:</strong> contact@rapidstreamadventures.com</p>
+        <p><strong>Location:</strong> Kalerwe Road, Kawempe Kampala Uganda</p>
+    </section>
 
-      <label for="message">Your Message:</label>
-      <textarea id="message" name="message" required></textarea>
+    <section class="contact-form">
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
 </main>
 <footer>
-  <p>&copy; 2024 Your Name.</p>
-</footer>
+  <p>&copy; 2024 🌸 RapidStream Adventures 🌸.</p>
+  <script>
+      let currentDate = new Date().toLocaleString();
+      document.getElementById("currentyear").textContent = currentDate;
+  </script>
+  </footer>
 <script src="main.js" defer></script>
 </body>
 </html>

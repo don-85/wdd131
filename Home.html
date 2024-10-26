@@ -23,13 +23,14 @@
   <main>
   
     <section class="site-name">
-        <h2>Site Name: RapidStream Adventures</h2>
-        <p><strong>Reason for selection:</strong> The name 'RapidStream Adventures' was chosen to reflect the exciting, fast-paced, and adventure-filled experiences we offer with white-water rafting and other outdoor activities. It captures the essence of thrilling outdoor fun in a natural environment.</p>
+        <h1>Welcome to RapidStream Adventures</h1>
+        <h2>Discover Unforgettable River Rafting Experiences</h2>
+        <p>Embark on a thrilling journey with RapidStream Adventures, the premier destination for unforgettable white-water rafting experiences. Nestled in the heart of nature’s most spectacular river courses, our company offers a range of rafting adventures designed for all levels of enthusiasts—from beginners to adrenaline seekers.</p>
     </section>
 
    
     <section class="site-purpose">
-        <h2>Site Purpose</h2>
+        <h2>Purpose</h2>
         <p>The purpose of the RapidStream Adventures website is to provide information about our thrilling white-water rafting and adventure services. The site includes detailed information about available rafting packages, safety guidelines, and booking forms for adventure seekers looking for an unforgettable outdoor experience.</p>
     </section>
 
@@ -51,53 +52,48 @@
 
    
     <section class="typography">
-        <h2>Typography</h2>
-        <p><strong>Primary Font:</strong> 'Arial' is used for the body text for its clean and readable style.</p>
-        <p><strong>Heading Font:</strong> 'Georgia' is applied to all headings to give a classic, elegant feel to important sections.</p>
+        
     </section>
 
-    
-    <section class="contact-form">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2024 RapidStream Adventures.</p>
-    <a href="https://app.moqups.com/Dv6XwOsgjZLaMCxk0K1ZJSLzlcp6R1Ow/view/page/ad64222d5">Wireframe</a>
-<script>
-    
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-
-       
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-     
-        localStorage.setItem('contactData', JSON.stringify({ name, email, message }));
-
-       
-        alert('Form submitted successfully!');
-    });
-
+    <section class="intro">
   
-    window.onload = function () {
-        if (localStorage.getItem('contactData')) {
-            const contactData = JSON.parse(localStorage.getItem('contactData'));
-            console.log('Previous contact data found: ', contactData);
-        }
-    };
-</script>
+        <h2>What We Offer</h2>
+        <p>At RapidStream Adventures, our commitment is to provide you with a safe, exhilarating, and memorable rafting experience. We offer a variety of packages that include half-day tours, full-day expeditions, and multi-day adventures. Each trip is guided by our team of expert rafters who ensure your safety while enhancing your experience with insights into the local ecology and history.</p>
+        <h2>Explore Our Tours</h2>
+        <p>
+          <ol>
+          <li>Family Fun Run: Perfect for families and first-timers, enjoy gentle rapids and scenic views.</li>
+          <li>The Challenger: Test your skills with our intermediate course featuring thrilling waves and stunning landscapes.</li>
+          <li>The Extreme: Designed for experienced rafters, tackle the most challenging rapids for an ultimate adrenaline rush.</li>
+        </ol>
+        </p>
+        <h2>Why Choose Us?</h2>
+        <p>
+          <ol>
+            <li>Safety First: Your safety is our top priority. All our guides are certified and experienced, and we use top-of-the-line equipment.</li>
+            <li>Environmental Stewardship: We are committed to preserving the beautiful environments we operate in. Our tours are conducted with the utmost respect for nature.</li>
+            <li>Community Involvement: We proudly support local communities and contribute to sustainable tourism practices.</li>
+          </ol>
+        </p>
+        <h2>Join Us for an Adventure of a Lifetime!</h2>
+        <p>Whether you’re seeking a peaceful float down serene waters or an exhilarating dash through wild rapids, RapidStream Adventures has something for everyone. Browse our tours, book your adventure, and get ready to hit the water with us!</p>
+        
+        <h2>Our Features</h2>
+        <p>Explore the key features of our service below:</p>
+        <img src="image 1.jpg" alt="Intro image" loading="lazy">
+        <img src="image 2.jpg" alt="Intro image" loading="lazy">
+        <img src="image 3.jpg" alt="Intro image" loading="lazy">
+        <img src="image 4.jpg" alt="Intro image" loading="lazy">
+        <img src="image 6.jpg" alt="Intro image" loading="lazy">
+        <img src="image 7.jpg" alt="Intro image" loading="lazy">
+      </section>
+      <main>
+        <footer>
+    <p>&copy; 2024 🌸 RapidStream Adventures 🌸.</p>
+    <script>
+        let currentDate = new Date().toLocaleString();
+        document.getElementById("currentyear").textContent = currentDate;
+    </script>
+    </footer>
+    <a href="https://app.moqups.com/Dv6XwOsgjZLaMCxk0K1ZJSLzlcp6R1Ow/view/page/ad64222d5">Wireframe</a>
+<script src="scripts/main.js"></script>

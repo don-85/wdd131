@@ -21,25 +21,46 @@
     </nav>
   </header>
 <main>
-  <section class="intro">
-    <h1>Welcome to Our Website</h1>
-    <p>This is the home page of our website. Here we provide a brief overview of what we do.</p>
-    <img src="image1.jpg" alt="Intro image" loading="lazy">
-  </section>
+  <div class="container">
+    <section class="section-title">
+        <h2>About Us</h2>
+    </section>
+    
+    <section class="about-content">
+        <p>Welcome to RapidStream Adventures, where the spirit of the river meets the thrill of adventure. Founded by a group of passionate rafters and outdoor enthusiasts, our mission is to share the exhilarating experience of white-water rafting with people from all walks of life. Located in one of the most stunning river regions, RapidStream Adventures started with a simple idea: to make white-water rafting accessible, safe, and enjoyable for everyone.</p>
+    </section>
 
-  <section class="features">
-    <h2>Our Features</h2>
-    <p>Explore the key features of our service below:</p>
-    <ul>
-      <li>Feature 1</li>
-      <li>Feature 2</li>
-      <li>Feature 3</li>
-    </ul>
-  </section>
+    <section class="about-content">
+        <h3>Our Team</h3>
+        <p>At the heart of RapidStream Adventures is our dedicated team of professionals. Our guides are not only expert rafters but also trained in first aid and river rescue techniques, ensuring the highest safety standards are always maintained. They’re also local area experts who delight in sharing stories about the region’s history, flora, and fauna, making each rafting trip both exciting and informative.</p>
+    </section>
+
+    <section class="about-content">
+        <h3>Our Values</h3>
+        <div class="values-list">
+            <ul>
+                <li><strong>Safety:</strong> We adhere to strict safety protocols to ensure that every adventure with us is safe and enjoyable.</li>
+                <li><strong>Respect for Nature:</strong> We are committed to preserving the natural beauty of our river courses. Our operations are designed to minimize environmental impact and promote conservation.</li>
+                <li><strong>Passion for Adventure:</strong> We believe that adventure brings people together and are passionate about providing unforgettable experiences that excite and inspire.</li>
+                <li><strong>Community Engagement:</strong> We actively participate in and contribute to the local community, promoting sustainable tourism and supporting local initiatives.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="join-us">
+        <p>Join us for an adventure of a lifetime!</p>
+        <a href="#">Book Your Adventure</a>
+    </section>
+</div>
+
 </main>
 <footer>
-  <p>&copy; 2024 Your Name.</p>
-</footer>
+  <p>&copy; 2024 🌸 RapidStream Adventures 🌸.</p>
+  <script>
+      let currentDate = new Date().toLocaleString();
+      document.getElementById("currentyear").textContent = currentDate;
+  </script>
+  </footer>
 <script src="main.js" defer></script>
 </body>
 </html>
